@@ -1,10 +1,13 @@
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import {PaginaPrincipalComponent} from "./pagina-principal/pagina-principal.component";
+import {RouterModule, Routes} from "@angular/router";
+import {ModuleWithProviders} from "@angular/core";
+import {CardArticuloComponent} from "./card-articulo/card-articulo.component";
 
-const routes: Routes = [];
+export const RUTAS_APP: Routes = [
 
-@NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
-})
-export class AppRoutingModule { }
+  {
+    path: '**',
+    component: CardArticuloComponent
+  }
+];
+export const ROUTING: ModuleWithProviders = RouterModule.forRoot(RUTAS_APP);
