@@ -9,13 +9,17 @@ import { PaginaPrincipalComponent } from './pagina-principal/pagina-principal.co
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {ArticulosService} from "./Servicios/articulos.service";
 import {HttpClientModule} from "@angular/common/http";
+import { DetalleProductoComponent } from './detalle-producto/detalle-producto.component';
+import { ListaProductosComponent } from './lista-productos/lista-productos.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
     CardArticuloComponent,
-    PaginaPrincipalComponent
+    PaginaPrincipalComponent,
+    DetalleProductoComponent,
+    ListaProductosComponent
   ],
   imports: [
     BrowserModule,

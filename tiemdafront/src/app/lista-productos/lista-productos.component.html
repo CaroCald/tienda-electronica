@@ -1,0 +1,13 @@
+
+<div class="container" style="margin-top: 30px">
+  <div class="row">
+    <div class="col-sm-4" *ngFor="let art of articulos; ">
+      <app-card-articulo
+        [descripcion]="art.name"
+        [cantidad]="art.total_items_in_this_category"
+        [titulo]="art.name"
+        [id]="art.id"
+      ></app-card-articulo>
+    </div>
+  </div>
+</div>
