@@ -1,8 +1,8 @@
 import {RouterModule, Routes} from "@angular/router";
 import {ModuleWithProviders} from "@angular/core";
-import {CardArticuloComponent} from "./card-articulo/card-articulo.component";
 import {DetalleProductoComponent} from "./detalle-producto/detalle-producto.component";
 import {ListaProductosComponent} from "./lista-productos/lista-productos.component";
+import {ListaComprasComponent} from "./lista-compras/lista-compras.component";
 
 export const RUTAS_APP: Routes = [
 
@@ -13,6 +13,10 @@ export const RUTAS_APP: Routes = [
   {
     path: 'detalle',
     component: DetalleProductoComponent
+  },
+  {
+    path: 'lista-compras',
+    component: ListaComprasComponent
   },
   {
     path: '**',

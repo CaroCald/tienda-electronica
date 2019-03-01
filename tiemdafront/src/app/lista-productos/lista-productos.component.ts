@@ -12,7 +12,6 @@ export class ListaProductosComponent implements OnInit {
   articulos:any[]=[];
   ngOnInit() {
     this.cargarArticulos();
-    console.log(this.articulos)
   }
 
   cargarArticulos(){

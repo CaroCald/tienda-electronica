@@ -11,6 +11,7 @@ import {ArticulosService} from "./Servicios/articulos.service";
 import {HttpClientModule} from "@angular/common/http";
 import { DetalleProductoComponent } from './detalle-producto/detalle-producto.component';
 import { ListaProductosComponent } from './lista-productos/lista-productos.component';
+import { ListaComprasComponent } from './lista-compras/lista-compras.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ListaProductosComponent } from './lista-productos/lista-productos.compo
     CardArticuloComponent,
     PaginaPrincipalComponent,
     DetalleProductoComponent,
-    ListaProductosComponent
+    ListaProductosComponent,
+    ListaComprasComponent
   ],
   imports: [
     BrowserModule,

@@ -6,6 +6,7 @@ import {Observable} from "rxjs";
 export class ArticulosService {
 
   idArticulo;
+  imagenArticulo;
   constructor(private http:HttpClient){
 
   }
@@ -16,7 +17,14 @@ export class ArticulosService {
   colocarId(id){
     this.idArticulo=id;
   }
+  cargarUnArticuloEspecifico(id):Observable<AudioVideo>{
+    return this.http.get<AudioVideo>("https://api.mercadolibre.com/categories/"+id)
+  }
 
+  cargarImagen(imagen){
+    this.imagenArticulo=imagen;
+
+  }
 
 
 }
